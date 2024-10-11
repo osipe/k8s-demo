@@ -1,0 +1,11 @@
+# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: echo-server-service
+spec:
+  selector:
+    app: echo-server
+  ports:
+    - port: 80
+      targetPort: 8080  # This is the port your app listens on
